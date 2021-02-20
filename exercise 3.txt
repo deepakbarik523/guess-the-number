@@ -1,0 +1,60 @@
+# no of guesses 9
+# print no of guesses left
+# No of guesses he took to finish
+# game over
+n=20
+no_of_guesses=1
+print("number of guesses is limited to 9")
+while(no_of_guesses<=9):
+    guess_no=int(input("enter the number you guess:\n"))
+    if(guess_no<20):
+        print("your guessed number is lesser\n")
+    elif(guess_no>20):
+        print("your guessed number is high\n")
+    else:
+        print("congratulation you gussed the right number\n")
+        print(no_of_guesses,"you took to guess the right number")
+        break
+    print(9-no_of_guesses, "no of guesses left to get game over")
+    no_of_guesses=no_of_guesses+1
+if(no_of_guesses>9):
+    print("game over")
+
+
+output:
+number of guesses is limited to 9
+enter the number you guess:
+3
+your guessed number is lesser
+
+8 no of guesses left to get game over
+enter the number you guess:
+5
+your guessed number is lesser
+
+7 no of guesses left to get game over
+enter the number you guess:
+40
+your guessed number is high
+
+6 no of guesses left to get game over
+enter the number you guess:
+30
+your guessed number is high
+
+5 no of guesses left to get game over
+enter the number you guess:
+22
+your guessed number is high
+
+4 no of guesses left to get game over
+enter the number you guess:
+18
+your guessed number is lesser
+
+3 no of guesses left to get game over
+enter the number you guess:
+20
+congratulation you gussed the right number
+
+7 you took to guess the right number
